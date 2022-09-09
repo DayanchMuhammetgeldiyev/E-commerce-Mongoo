@@ -1,0 +1,27 @@
+{
+  "name": "e-commerce-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "commonjs",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DayanchMuhammetgeldiyev/E-commerce-Mongoo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DayanchMuhammetgeldiyev/E-commerce-Mongoo/issues"
+  },
+  "homepage": "https://github.com/DayanchMuhammetgeldiyev/E-commerce-Mongoo#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0",
+    "nodemon": "^2.0.19"
+  }
+}
