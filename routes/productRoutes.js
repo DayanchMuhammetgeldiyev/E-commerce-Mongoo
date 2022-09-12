@@ -4,7 +4,7 @@ const {
   verifyTokenAndAuthorization,
   verifyTokenAndAdmin,
 } = require("./verifyToken");
-const Product = require("../models/Product");
+const Product = require("../models/Products");
 
 //CREATE
 

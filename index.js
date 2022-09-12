@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 const dotenv = require ('dotenv');
 const user = require("./routes/userRoutes");
 const authRoute = require("./routes/auth");
+const cardRoute = require("./routes/cardRoute");
+const orderRoute = require("./routes/orderRoute");
+const productRoute = require("./routes/productRoutes");
+const stripeRoute = require("./routes/stripe")
 dotenv.config()
 
 mongoose.connect
@@ -14,8 +18,12 @@ mongoose.connect
 
 
 app.use(express.json());
+app.use("/api/product", productRoute);
 app.use("/api/auth", authRoute);
+app.use("/api/card", cardRoute);
+app.use("/api/order", orderRoute);
 app.use("/api/users", user);
+app.use("/api/checkout", stripeRoute);
 
 
 
